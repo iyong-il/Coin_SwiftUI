@@ -21,6 +21,7 @@ struct TopMoversView: View {
           }
         }
         .scrollIndicators(.hidden)
+        
       }
       .padding()
     }

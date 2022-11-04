@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+  @StateObject var viewModel = HomeViewModel()
+  
     var body: some View {
       NavigationView {
         ScrollView(.vertical, showsIndicators: false) {
@@ -16,7 +18,7 @@ struct HomeView: View {
 
           Divider()
 
-          AllCoinsView()
+          AllCoinsView(viewModel: viewModel)
 
           
         }
