@@ -12,11 +12,10 @@ struct CoinRowView: View {
   let coin: Coin
     var body: some View {
       HStack {
-        Text("\(Int(coin.marketCapRank ?? 1))")
+        Text("\(Int(coin.marketCapRank))")
           .font(.caption)
           .foregroundColor(.gray)
 
-//        Image(systemName: "bitcoinsign.circle.fill")
         KFImage(URL(string: coin.image))
           .resizable()
           .scaledToFit()

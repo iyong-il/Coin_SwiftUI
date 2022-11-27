@@ -12,7 +12,7 @@ struct Coin: Codable, Identifiable {
   let id, symbol, name: String
   let image: String
   let currentPrice: Double
-  let marketCap, marketCapRank: Double?
+  let marketCap, marketCapRank: Double
   let fullyDilutedValuation: Double?
   let totalVolume, high24H, low24H: Double?
   let priceChangePercentage24H, priceChange24H: Double
@@ -54,6 +54,7 @@ struct Coin: Codable, Identifiable {
     case sparklineIn7D = "sparkline_in_7d"
     case priceChangePercentage24HInCurrency = "price_change_percentage_24h_in_currency"
   }
+
 }
 
 // MARK: - Roi
